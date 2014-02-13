@@ -5,11 +5,13 @@ Github Webhooks + Cloudant
 ## Thus far...
 
 At Cloudant.com:
+
 1. created a `webhooked-wiki` database in `labs.cloudant.com`
 2. generated an API Key & Secret (kept a copy of both for later use)
 3. changed that API Key's permission from "Reader" to "Writer" (only)
 
 At Github.com:
+
 1. created this repo
 2. went to `Settings | Webhooks & Services` for the repo & added a webhook to `POST`
 to `https://API_KEY:API_SECRET@labs.cloudant.com/webhooked-wiki`
@@ -20,6 +22,7 @@ to `https://API_KEY:API_SECRET@labs.cloudant.com/webhooked-wiki`
 showing that the webhook succeeded.
 
 Back at Cloudant.com:
+
 1. checked the contents of the DB which now contained this document
 
 ```javascript
